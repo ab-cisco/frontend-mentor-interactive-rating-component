@@ -1,0 +1,147 @@
+@import "./RatingColors.module.scss";
+
+:local {
+  .contanier {
+    height: 416px;
+    width: 412px;
+    border-radius: 30px;
+    background: $black-gradient;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+
+    padding: 32px;
+
+    &Submitted {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .ratingIcon {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background: $dark-blue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+  }
+
+  .title {
+    color: $pure-white;
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: bold;
+
+    margin-bottom: 7px;
+  }
+
+  .description {
+    color: $light-gray;
+    font-size: 15px;
+    line-height: 24px;
+
+    margin-bottom: 24px;
+  }
+
+  .ratingSelector {
+    margin-bottom: 32px;
+  }
+
+  .submitButton {
+    height: 45px;
+    border-radius: 22.5px;
+    border: none;
+    cursor: pointer;
+
+    background: $orange;
+    color: $pure-white;
+
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:hover {
+      background: $pure-white;
+      color: $orange;
+    }
+  }
+
+  .thankYouIcon {
+    margin-bottom: 32px;
+  }
+
+  .ratingSelected {
+    width: max-content;
+    padding: 4px 20px;
+    border-radius: 22.5px;
+
+    font-size: 15px;
+    line-height: 24px;
+
+    background: $dark-blue;
+    color: $orange;
+
+    margin-bottom: 32px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .contanier {
+      height: 360px;
+      width: 327px;
+    }
+
+    .wrapper {
+      padding: 24px;
+    }
+
+    .ratingIcon {
+      height: 40px;
+      width: 40px;
+
+      margin-bottom: 16px;
+    }
+
+    .title {
+      font-size: 24px;
+      line-height: 30px;
+
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .ratingSelector {
+      margin-bottom: 24px;
+    }
+
+    .submitButton {
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 1.8px;
+    }
+
+    .thankYouIcon {
+      margin-bottom: 24px;
+    }
+
+    .ratingSelected {
+      font-size: 14px;
+      line-height: 22px;
+
+      margin-bottom: 24px;
+    }
+  }
+}

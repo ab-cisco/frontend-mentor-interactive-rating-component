@@ -1,0 +1,49 @@
+@import "../../RatingColors.module.scss";
+
+:local {
+  .contanier {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button {
+    height: 51px;
+    width: 51px;
+    border-radius: 50%;
+    background: $dark-blue;
+    color: $medium-gray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    &Active {
+      background: $medium-gray;
+      color: $pure-white;
+    }
+
+    &:hover {
+      background: $orange;
+      color: $pure-white;
+    }
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .button {
+      height: 42px;
+      width: 42px;
+    }
+
+    .text {
+      font-size: 14px;
+    }
+  }
+}
